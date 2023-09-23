@@ -1,0 +1,212 @@
+
+
+body {
+  margin: 0;
+  background-image: url('images/warzone3.jpg'); 
+  background-repeat: no-repeat; 
+  background-size: 100% 200%;
+  overflow: hidden;
+}
+
+/* this is the code for the instruction box */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+*,*::before, *::after{
+  font-family: 'Metal Mania', cursive;
+  font-family: 'Rubik 80s Fade', cursive;
+  font-family: 'Wallpoet', cursive;
+  box-sizing: border-box;
+}
+.splash-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+}
+
+h1{
+  font-size: 77px;
+}
+
+.btn{
+  padding: .5em 1em;
+  color: #000;
+}
+
+.splash-btn{
+  font-size: 2rem;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.battleship-grid{
+  margin: 2vmin;
+  display: grid;
+  background-color: rgb(37, 44, 61);
+  grid-template-rows: repeat(10,4.6vmin);
+  grid-template-columns: repeat(10,4.6vmin);
+}
+
+.taken,
+.ship{
+  background-color: hsl(0,0%, 80%);
+}
+  
+.grid-display{
+  display: flex;
+}
+
+.battleship-grid div {
+  border: 1px solid hsla(0,0%,100%, .2);
+}
+
+
+
+  
+  .destroyer-container {
+    width: 80px;
+    height: 40px;
+   
+    margin: 10px;
+    display: flex;
+  }
+  .destroyer-container-vertical {
+    width: 40px;
+    height: 80px;
+    
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .submarine-container {
+    width: 120px;
+    height: 40px;
+    
+    margin: 10px;
+    display: flex;
+  }
+  
+  .submarine-container-vertical {
+    width: 40px;
+    height: 120px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .cruiser-container {
+    width: 120px;
+    height: 40px;
+    margin: 10px;
+    display: flex;
+  }
+  
+  .cruiser-container-vertical {
+    width: 40px;
+    height: 120px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .battleship-container {
+    width: 160px;
+    height: 40px;
+    margin: 10px;
+    display: flex;
+  }
+  
+  .battleship-container-vertical {
+    width: 40px;
+    height: 160px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .carrier-container {
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    display: flex;
+  }
+  
+  .carrier-container-vertical {
+    width: 40px;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .ship div {
+    width: 40px;
+    height: 40px;
+  }
+  
+  
+  .boom {
+    background-color: red;
+  }
+  
+  .miss {
+     background-color: black;
+  }
+  
+  .connected, .ready {
+    font-weight: normal;
+  }
+  
+  .connected span,
+  .ready span {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: red;
+  }
+  span.green {
+    background: green;
+  }
