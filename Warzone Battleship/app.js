@@ -453,3 +453,4 @@ document.addEventListener('DOMContentLoaded', () => {
       startButton.removeEventListener('click', playGameSingle)
     }
   })
+  
