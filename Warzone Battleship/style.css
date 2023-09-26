@@ -1,11 +1,20 @@
-
-
 body {
   margin: 0;
   background-image: url('images/warzone3.jpg'); 
   background-repeat: no-repeat; 
-  background-size: 100% 200%;
+  background-size: cover;
   overflow: hidden;
+  position: relative;
+}
+
+.overlay-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Set z-index to be lower than other elements */
 }
 
 /* this is the code for the instruction box */
@@ -69,8 +78,6 @@ body {
 }
 
 
-
-
 *,*::before, *::after{
   font-family: 'Metal Mania', cursive;
   font-family: 'Rubik 80s Fade', cursive;
@@ -85,6 +92,10 @@ body {
   height: 55vh;
 }
 
+.splash-btn,
+.btn {
+  z-index: 2;
+}
 h1{
   font-size: 77px;
 }
@@ -120,7 +131,7 @@ h1{
 
 .grid-computer > .taken,
 .grid-computer > .boom {
-  background-color: hsl(210, 7%, 88%) !important;
+  background-color: hsl(238, 28%, 20%) !important;
   border-radius: 0 !important;
 }
 
