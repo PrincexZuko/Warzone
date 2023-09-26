@@ -14,10 +14,9 @@ body {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  z-index: -1; /* Set z-index to be lower than other elements */
+  z-index: -1; 
 }
 
-/* this is the code for the instruction box */
 .modal {
   display: none;
   position: fixed;
@@ -53,6 +52,7 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+
 /* for music */
 #toggleButton {
   position: fixed;
@@ -67,14 +67,14 @@ body {
 #audioContainer {
   position: fixed;
   top: 10px;
-  right: 40px; /* Adjust as needed to position the text */
+  right: 40px; 
   display: inline-block;
 }
 
 #audioText {
   font-size: 16px;
   margin-right: 5px;
-  color: white; /* Set text color to white */
+  color: white; 
 }
 
 
@@ -96,8 +96,13 @@ body {
 .btn {
   z-index: 2;
 }
+
 h1{
   font-size: 77px;
+}
+.quotes {
+  margin-top: -40px; 
+  color: #ff7b00;
 }
 
 .btn{
