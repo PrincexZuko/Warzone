@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Rubik+80s+Fade&family=Wallpoet&display=swap" rel="stylesheet">
-   
   </head>
   <body>
     <!-- How to Play Section -->
@@ -24,36 +23,29 @@
         <!--How to play battleship-->
         <h3>How to Play</h3>
         <ol>
-        <li>Place your ships on the grid. This is typically done by clicking on the grid squares to position your ships vertically or horizontally.</li>
-        <li>Once you and the AI have set up your fleets, the game will begin.</li>
-          <li>In turns, you and the AI will select grid squares to target. This is how you try to "hit" each other's ships.</li>
+          <li>Place your ships on the grid. This is typically done by clicking on the grid squares to position your ships vertically or horizontally.</li>
+          <li>Once you have set up your fleet, the game will begin.</li>
+          <li>In turns, you will select grid squares to target. This is how you try to "hit" the AI's ships.</li>
           <li>After each turn, the game will provide feedback indicating whether you've hit a ship, missed, or sunk a ship.</li>
-          <li>Keep taking turns until you or the AI has successfully sunk all of your opponent's ships. The first one to do so is the winner.</li>
+          <li>Keep taking turns until you have successfully sunk all of the AI's ships. You win the game!</li>
         </ol>
       </div>
     </div>
 
-     <!--Music audio-->
-     <!-- Add this to your HTML file -->
+    <!-- Music audio -->
     <script src="musicPlayer.js"></script>
     <audio id="bgAudio" src="ytmp3free.cc_battleship-2012-soundtrack-suite-steve-jablonsky-youtubemp3free.org.mp3" loop></audio>
     <div id="audioContainer">
-    <button id="toggleButton">🔊</button>
-    <span id="audioText">Music</span>
+      <button id="toggleButton">🔊</button>
+      <span id="audioText">Music</span>
     </div>
 
-
-    
-    <!--title page-->
-    <!--WARSHIP HAVOC 🚢📍💣-->
+    <!-- Title page -->
+    <!-- WARSHIP HAVOC 🚢📍💣 -->
     <div class="splash-container">
       <h1 class="splash-title">WARSHIP HAVOC</h1>
       <p>Embrace the Chaos, Command the Havoc💣</p>
-      <div>
-        <!--PLAYER PICKS SINGLE OR MUTIPLAYER-->
-        <a href="singleplayer.html" class="btn splash-btn">Single Player</a>
-        <a href="multiplayer.html" class="btn splash-btn">Multiplayer</a>
-      </div>
+      <a href="singleplayer.html" class="btn splash-btn">Single Player</a>
     </div>
 
     <script>
@@ -65,5 +57,7 @@
         document.getElementById('myModal').style.display = 'none';
       }
     </script>
+
+    <script src="script.js"></script>
   </body>
 </html>
