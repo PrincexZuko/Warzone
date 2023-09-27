@@ -24,6 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
   let enemyReady = false
   let allShipsPlaced = false
   let shotFired = -1
+  
+  
+  
   //Ships
   const shipArray = [
     {
@@ -73,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     startMultiPlayer()
   }
 
+  //REMOVE MULTIPLAYER
   // Multiplayer
   function startMultiPlayer() {
     const socket = io();
@@ -308,6 +312,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // console.log('dragend')
   }
 
+  //REMOVE THIS!
   // Game Logic for MultiPlayer
   function playGameMulti(socket) {
     setupButtons.style.display = 'none'
